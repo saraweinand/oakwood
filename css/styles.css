@@ -1,78 +1,45 @@
-.nav {
-	background-color: #444;
-	height: 12%;
-}
-
-.nav li:first-of-type {
-	width: 20%;
-	margin: 2.75% 0 2% 3%;
-	padding: 0;
-}
-
-.nav li img {
-	width: 100%;
-}
-
-.nav ul {
-  list-style: none;
-  padding: 0 0 0 2em;
-  margin: -.25em 0 0 0;
-  float: left;
-}
-
-.nav ul {
-	float: left;
-	display: inline-block;
-	padding: 0 2em 0 0;
-}
-.nav li {
-	display: inline-block;
-  font-size: 1.1em;
-  padding: .6em .4em .5em .4em;
-
-}
-
-.nav li {
-	vertical-align: middle;
-
-}
-
- 
-.nav a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
-  font-size: .7em;
-
-}
-
 .banner {
 	background: #222;
 	height: 8%;
 }
 
+.banner .socialmedia {
+	float: left;
+	margin-top: .75%;
+}
+
+.banner .socialmedia img {
+	width: 1.25em;
+}
+
+.banner .socialmedia li {
+	display: inline-block;
+	list-style: none;
+}
+
 .searchbar {
-	margin-top: 1.25%;
+	margin-top: .5%;
+	float: right;
+	margin-right: 2%;
 }
 
 .searchbar input {
 	border: none;
-	height: 1.5em;
+	height: 1.25em;
 	padding-left: .5%;
 	font-weight: 300;
+	font-size: .9em;
 	box-shadow: none;
+	padding: .2em 0 .2em .5em;
 }
 
 .searchbar button {
 	border: none;
 	background: #eee;
-	height: 1.6em;
-	width: 1.6em;
+	height: 1.45em;
+	width: 1.45em;
 	box-shadow: none;
 	position: relative;
-	margin-top: -.1em;
 }
 
 .searchbar button img {
@@ -370,10 +337,149 @@ a.shopnow:hover {
 	background: #444;
 }
 
+.mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #444;
+}
+.mobile div {
+  display: none;
+  margin: 2% 0;
+}
+.mobile button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border: 0;
+  text-indent: 200%;
+  overflow: hidden;
+  background: rgb(255,255,255) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+  border-radius: none;
+  background-size: 80%;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+          transition: all 400ms ease;
+}
+.mobile button.expanded {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: transparent;
+  border: 0;
+}
+.mobile a {
+  display: block;
+}
+a {
+  padding: .5em 0;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
 
+.desktop {
+  display: inline-block;
+}
+.desktop a {
+  float: left;
+}
+
+
+.nav {
+	background-color: #444;
+	padding: 1% 2.5% .75% 2.5%;
+}
+
+.nav a:first-of-type img {
+	width: 15em;
+	float: left;
+}
+
+ .nav .desktop {
+ 	float: left;
+ 	padding: .75% 0 0 1%;
+ }
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-size: .7em;
+  padding: 0 .5em;
+
+}
+
+.cart {
+	float: right;
+	margin: 0 5% 0 0;
+}
+.cart img {
+	width: 2em;
+}
 
 
 @media screen and (max-width: 768px) { 
+
+	.nav {
+		background: #444;
+		height: 10%;
+	}
+
+	.mobile {
+    display: block;
+        margin-left: -2.5%;
+  }
+  .desktop {
+    display: none;
+  }
+
+	.banner {
+		visibility: hidden;
+		height: 0;
+	}
+
+	
+	#desktopnav {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+
+
+	button#mobilemenu {
+		visibility: visible;
+		height: 2em;
+		width: 2em;
+		position: absolute;
+		top: 2.5%;
+		left: 2%;
+		background: rgb(255,255,255) url('https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png');
+	}
+
+
+	#mobilenav {
+		visibility: visible;
+		opacity: 0;
+	}
+
+	.cart {
+		position: absolute;
+		top: 3%;
+		right: 0;
+	}
+
+	.nav a:first-of-type img {
+	position: absolute;
+	top: 2.75%;
+	left: 35%;
+}
+
 	.collections section:last-of-type {
 		width: 100%;
 	}
@@ -401,6 +507,12 @@ a.shopnow:hover {
 
 
 @media screen and (max-width: 480px) { 
+
+	.nav a:first-of-type img {
+	position: absolute;
+	top: 2.75%;
+	left: 30%;
+}
 
 	.offers img {
 		width: 100%;

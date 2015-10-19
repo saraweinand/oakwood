@@ -1,6 +1,6 @@
 .nav {
 	background-color: #444;
-	height: 12%;
+	height: 18%;
 }
 
 .nav li:first-of-type {
@@ -46,50 +46,6 @@
   text-transform: uppercase;
   font-size: .7em;
 
-}
-
-.banner {
-	background: #222;
-	height: 8%;
-}
-
-.searchbar {
-	margin-top: 1.25%;
-}
-
-.searchbar input {
-	border: none;
-	height: 1.5em;
-	padding-left: .5%;
-	font-weight: 300;
-	box-shadow: none;
-}
-
-.searchbar button {
-	border: none;
-	background: #eee;
-	height: 1.6em;
-	width: 1.6em;
-	box-shadow: none;
-	position: relative;
-	margin-top: -.1em;
-}
-
-.searchbar button img {
-	width: 1em;
-	vertical-align: middle
-
-
-}
-
-
-.icons li {
-	display: inline-block;
-	list-style: none;
-}
-
-.icons li img{
-	width: 1.25em;
 }
 
 /*---- Searchbar -----*/
@@ -186,7 +142,7 @@ a.button:hover {
 h1 {
 	text-align: center;
 	font-size: 4em;
-	padding: 5% 0 0 0;
+	padding: 4% 0 0 0;
 	font-family: 'Old Standard TT', serif;
 	color: #fff;
 	margin-bottom: 0;
@@ -221,7 +177,7 @@ h5 {
 
 
 .landing {
-    height: 75vh;
+    height: 50vh;
     width: 100%;
     display: block;
     margin: 0 auto 0 auto;
@@ -233,45 +189,105 @@ h5 {
     position: relative;
 }
 
-.landing p {
-	color: #fff;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	width: 40%;
-	margin: 0 auto;
-	text-align: center;
-	text-shadow: 0 0px 7px rgba(0, 0, 0, 0.4);
-}
 
-a.shopnow {
-	color: black;
-	background: #fff;
-	text-transform: uppercase;
-	padding: .5em 2em;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	width: 8%;
+
+
+/* tile filters */
+
+.filters {
+	width: 35%;
 	display: block;
-	margin: 3% auto;
+	margin: 0 auto;
+	padding: 0;
 	text-align: center;
+	float: none;
 }
 
-a.shopnow:hover {
-	color: white;
-	background: #444;
-	
+input[type="radio"] {
+	display: none;
 }
 
-.featured,
-.updates {
+label {
+
+	padding: 0 1em;
+	margin-bottom: 3%;
+	float: left;
+	text-align: center;
+	border-right: 1px solid #444;
+}
+
+label:last-of-type {
+	border-right: none;
+}
+
+input[type="radio"][id="type_a"]:checked + label  {
+	color: red;
+}
+
+input[type="radio"][id="type_a"]:checked ~ .type_b,
+input[type="radio"][id="type_a"]:checked ~ .type_c,
+input[type="radio"][id="type_a"]:checked ~ .type_d, {
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+}
+
+input[type="radio"][id="type_b"]:checked + label  {
+	color: red;
+}
+
+input[type="radio"][id="type_b"]:checked ~ .type_a,
+input[type="radio"][id="type_b"]:checked ~ .type_c,
+input[type="radio"][id="type_b"]:checked ~ .type_d {
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+}
+
+input[type="radio"][id="type_c"]:checked + label  {
+	color: red;
+}
+
+input[type="radio"][id="type_c"]:checked ~ .type_b,
+input[type="radio"][id="type_c"]:checked ~ .type_a,
+input[type="radio"][id="type_c"]:checked ~ .type_d {
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+}
+
+input[type="radio"][id="type_d"]:checked + label  {
+	color: red;
+}
+
+input[type="radio"][id="type_d"]:checked ~ .type_b,
+input[type="radio"][id="type_d"]:checked ~ .type_a,
+input[type="radio"][id="type_d"]:checked ~ .type_c {
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+}
+
+
+
+
+
+
+
+.featured {
 	width: 80%;
 	display: block;
 	margin: 0 10%;
 }
 
-.updates {
-	margin-top: 5%;
-}
 
 .featured img {
 	width: 97%;
@@ -327,40 +343,8 @@ a.shopnow:hover {
 	text-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
 }
 
-.offer {
-	background: #E3AE57;
-	margin: 0 10% 0 0;
-}
-
-.offers img {
-	width: 92%;
-}
 
 
-.latestblog .fifty-fifty {
-	width: 48%;
-	margin: 0 1%;
-}
-
-.fifty-fifty img {
-	width: 100%;
-	margin-right: 6%;
-}
-
-.fifty-fifty p {
-	width: 94%;
-}
-.latestblog h4 {
-	text-align: left;
-	padding-top: 2%;
-	font-weight: 700;
-}
-
-.latestblog p {
-	text-align: left;
-	padding-top: 0%;
-	font-weight: 300;
-}
 
 .footer {
 	text-align: center;
@@ -378,14 +362,6 @@ a.shopnow:hover {
 		width: 100%;
 	}
 
-	.newproduct section {
-		width: 49%;
-	}
-
-	a.shopnow {
-		width: 20%;
-	}
-
 	.search-container {
 		visibility: hidden;
 	}
@@ -393,34 +369,17 @@ a.shopnow:hover {
 	h1 {
 		font-size: 3em;
 	}
-
-	.landing p {
-		width: 80%;
-	}
 }
 
 
 @media screen and (max-width: 480px) { 
 
-	.offers img {
-		width: 100%;
-	}
-	.newproduct section {
-		width: 100%;
-	}
-
-	.latestblog .fifty-fifty {
-		width: 100%;
-		margin-bottom: 5%;
-	}
+	
 
 	h1 {
 		font-size: 2.5em;
 	}
 
-	a.shopnow {
-		width: 40%;
-	}
 }
 
 /*CLEARFIX*/

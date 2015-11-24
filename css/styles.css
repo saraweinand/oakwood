@@ -1,11 +1,15 @@
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}
 .banner {
 	background: #222;
-	height: 8%;
+	height: 6%;
 }
 
 .banner .socialmedia {
 	float: left;
-	margin-top: .75%;
+	margin-top: 1.5%;
 }
 
 .banner .socialmedia img {
@@ -18,7 +22,8 @@
 }
 
 .searchbar {
-	margin-top: .5%;
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
 	float: right;
 	margin-right: 2%;
 }
@@ -47,6 +52,16 @@
 	vertical-align: middle
 
 
+}
+
+.footnav {
+	width: 50%;
+	display: inline-block;
+	padding-top: 1.5%;
+}
+
+nav.footnav a {
+	padding: 1.5% 2%;
 }
 
 
@@ -151,20 +166,40 @@ a.button:hover {
 }
 
 h1 {
-	text-align: center;
-	font-size: 4em;
-	padding: 5% 0 0 0;
-	font-family: 'Old Standard TT', serif;
+	text-align: left;
+	font-size: 3.8em;
+	padding: 0 0 0 0%;
+	font-family: 'proxima nova' ;
+	letter-spacing: .05em;
+	font-weight: 700;
 	color: #fff;
-	margin-bottom: 0;
-	text-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+	margin-top: -1em;
+	margin-left: 10%;
+	text-transform: uppercase;
+}
+
+.landing h2 {
+	font-family: 'proxima nova' ;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: .25em 0;
+	margin: 0;
+	text-align: left;
+	margin: -1% 0 0 10%;
+	color: #fff;
 }
 
 h2 {
-	font-family: 'Old Standard TT', serif;
-	font-size: 1.25em;
+	font-family: 'proxima nova' ;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 1em;
 	padding: .25em 0;
 	margin: 0;
+	text-align: left;
+	margin: -1% 0 0 10%;
+	color: #fff;
 }
 
 h4 {
@@ -174,7 +209,7 @@ h4 {
 	color: #000;
 	padding: 0;
 	margin: 0;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'proxima nova' ;
 }
 
 h5 {
@@ -188,7 +223,7 @@ h5 {
 
 
 .landing {
-    height: 75vh;
+    height: 100vh;
     width: 100%;
     display: block;
     margin: 0 auto 0 auto;
@@ -200,13 +235,21 @@ h5 {
     position: relative;
 }
 
+.landing h1:first-of-type {
+	margin-top: 10%;
+}
+
+.landing h2 {
+	margin-top: -4%;
+}
+
 .landing p {
 	color: #fff;
-	font-family: 'Lato', sans-serif;
+	font-family: 'proxima nova' ;
 	font-weight: 300;
 	width: 40%;
-	margin: 0 auto;
-	text-align: center;
+	margin: 5% auto 0 10%;
+	text-align: left;
 	text-shadow: 0 0px 7px rgba(0, 0, 0, 0.4);
 }
 
@@ -215,17 +258,17 @@ a.shopnow {
 	background: #fff;
 	text-transform: uppercase;
 	padding: .5em 2em;
-	font-family: 'Lato', sans-serif;
+	font-family: 'proxima nova' ;
 	font-weight: 300;
 	width: 8%;
 	display: block;
-	margin: 3% auto;
+	margin: 3% auto 0 10%;
 	text-align: center;
 }
 
 a.shopnow:hover {
 	color: white;
-	background: #444;
+	background: rgba(255,255,255,.8);
 	
 }
 
@@ -296,11 +339,12 @@ a.shopnow:hover {
 
 .offer {
 	background: #E3AE57;
-	margin: 0 10% 0 0;
+	margin: 0% 10% 0 0;
 }
 
 .offers img {
-	width: 92%;
+	width: 97%;
+	margin-top: -1.25%;
 }
 
 
@@ -332,9 +376,16 @@ a.shopnow:hover {
 .footer {
 	text-align: center;
 	font-weight: 300;
-	color: #fff;
+	color: gray;
 	margin-top: 8%;
-	background: #444;
+	background: #222;
+}
+
+.footer h6 {
+	padding: 1%;
+	margin: 0;
+	font-size: .5em;
+	font-weight: 300;
 }
 
 .mobile {
@@ -350,8 +401,8 @@ a.shopnow:hover {
 }
 .mobile button {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 20px;
+  left: 20px;
   border: 0;
   text-indent: 200%;
   overflow: hidden;
@@ -378,7 +429,7 @@ a {
   padding: .5em 0;
   text-decoration: none;
   color: #444;
-  font-weight: bold;
+
 }
 
 .desktop {
@@ -390,8 +441,8 @@ a {
 
 
 .nav {
-	background-color: #444;
-	padding: 1% 2.5% .75% 2.5%;
+
+	padding: 1.75% 2.5% 1.25% 2.5%;
 }
 
 .nav a:first-of-type img {
@@ -415,20 +466,27 @@ a {
 
 }
 
+.nav a:hover {
+	color: gray;
+	
+}
+
+
 .cart {
 	float: right;
 	margin: 0 5% 0 0;
-}
-.cart img {
 	width: 2em;
+}
+.cart img  {
+	width: 3em;
 }
 
 
 @media screen and (max-width: 768px) { 
 
 	.nav {
-		background: #444;
-		height: 10%;
+		background: #222;
+		height: 8%;
 	}
 
 	.mobile {
@@ -439,10 +497,24 @@ a {
     display: none;
   }
 
-	.banner {
-		visibility: hidden;
-		height: 0;
-	}
+
+.banner .socialmedia,
+.banner .searchbar {
+	width: 50%;
+	margin: 2% auto;
+}
+
+.banner .searchbar {
+	margin-top: -10%;
+}
+
+.banner .socialmedia {
+	margin-left: -15%;
+}
+
+.banner .footnav {
+	width: 100%;
+}
 
 	
 	#desktopnav {
@@ -451,13 +523,18 @@ a {
 		height: 0;
 	}
 
+	.latestblog p {
+		max-height: 10em;
+		overflow: hidden;
+	}
+
 
 	button#mobilemenu {
 		visibility: visible;
 		height: 2em;
 		width: 2em;
 		position: absolute;
-		top: 2.5%;
+		top: 3%;
 		left: 2%;
 		background: rgb(255,255,255) url('https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png');
 	}
@@ -470,8 +547,8 @@ a {
 
 	.cart {
 		position: absolute;
-		top: 3%;
-		right: 0;
+		top: 2%;
+		right: 1%;
 	}
 
 	.nav a:first-of-type img {
@@ -500,13 +577,29 @@ a {
 		font-size: 3em;
 	}
 
+	.landing h1:first-of-type {
+    margin-top: 30%;
+}
+
 	.landing p {
 		width: 80%;
+	}
+
+	.updates section{
+	width: 100%;
+	}
+
+	.updates section:nth-child(2) {
+		width: 50%;
 	}
 }
 
 
 @media screen and (max-width: 480px) { 
+
+	.banner .searchbar {
+	margin-top: -12%;
+}
 
 	.nav a:first-of-type img {
 	position: absolute;
@@ -522,7 +615,7 @@ a {
 	}
 
 	.latestblog .fifty-fifty {
-		width: 100%;
+		width: 200%;
 		margin-bottom: 5%;
 	}
 

@@ -9,127 +9,176 @@
     <!--Stylesheets-->
     <link rel='stylesheet' href='css/normalize.min.css' type='text/css' media='all'>
     <link rel='stylesheet' href='css/slice.css' type='text/css' media='all'> 
+    <link rel='stylesheet' href='css/styles.css' type='text/css' media='all'> 
     <link rel='stylesheet' href='css/styles-collections.css' type='text/css' media='all'> 
+
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
  
 </head>
 <body>
 
 <div class="framework_container">
-	
+    
     <div class="col one landing">
-        <section class="banner">
-            
-        </section> 
         <section class="nav">
-                <ul>
-                    <li><a href="xxx"><img src="img/logo.png" alt=""></a></li>
-                    <li><a href="xxx">Shoes</a></li>
-                    <li><a href="xxx">Bags</a></li>
-                    <li><a href="xxx">Apparel</a></li>
-                    <li><a href="xxx">Accessories</a></li>
-                    <li><a href="xxx">Sale</a></li>
-                    <li><a href="xxx">Blog</a></li>
-                </ul>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+                <nav class="desktop">
+                    <a href="collections.html">Bags</a>
+                    <a href="collections.html">Jackets</a>
+                    <a href="collections.html">Pants</a>
+                    <a href="collections.html">Accessories</a>
+                    <a href="collections.html">Sale</a>
+                    <a href="">Blog</a>
+                </nav>
+                
+                <nav class="mobile">
+                    <button>Toggle</button>
+                    <div>
+                        <a href="collections.html">Bags</a>
+                    <a href="collections.html">Jackets</a>
+                    <a href="collections.html">Pants</a>
+                    <a href="collections.html">Accessories</a>
+                    <a href="collections.html">Sale</a>
+                    <a href="">Blog</a>
+                    </div>
+                </nav>
 
-                <div class="searchbar"><input type="text" placeholder="search"><button><img src="img/socialmedia_01.png" alt=""></button></div>
+                <a href="cart.html"><div class="cart"><img src="img/shoppingcart-01.png" alt=""></div></a>
 
-        </section>  
-        <section><h1>Denim Shop</h1>
-            </section>
+        </section>   
     </div>
     
-
     <section class="title">
-        <h2>New Product</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 115.5 7.5" enable-background="new 0 0 115.5 7.5" xml:space="preserve">
-<rect x="0" y="0" width="115.5" height="7.5"/>
-</svg>
+        <h1>Clothing</h1>
+        <h2>by Marcus</h2>
     </section>
-    <div class="col one filters">
-        <input type="radio" id="type_all" name="jeans" />
-        <label for="type_all">All Product</label>
-        <input type="radio" id="type_a" name="jeans" />
-        <label for="type_a">Blue</label>
-        <input type="radio" id="type_b" name="jeans" />
-        <label for="type_b">Skinny</label>
-        <input type="radio" id="type_c" name="jeans" />
-        <label for="type_c">Distressed</label>
-        <input type="radio" id="type_d" name="jeans" />
-        <label for="type_d">Colored</label>
-    </div>
-    <div class="col four-even featured newproduct">
-        <section class="tile type_a">
-            <a href="productdetail.html"><img src="img/layers.jpg" alt="">
-            <h4>Squared Blazer</h4><h5>$105.00</h5></a>
+
+    <div class="col one sort">
+
+        <section><h6><a href="">12</a>|<a href="">24</a>|<a href="">48</a> per page</h6>
+        
+        <select>
+            <option value="volvo">Sort by:</option>
+          <option value="volvo">Price: Lowest to Highest</option>
+          <option value="saab">Price: Highest to Lowest</option>
+          <option value="opel">Popularity</option>
+          <option value="audi">Newest</option>
+        </select><h6> < <a href="">1</a>|<a href="">2</a>|<a href="">3 </a> > </h6>
         </section>
-        <section class="tile type_b">
-            <a href="productdetail.html"><img src="img/denim.jpg" alt="">
-            <h4>Skinny Gentlemans Jeans</h4><h5>$90.00</h5></a>
-        </section>
-        <section class="tile type_c">
-            <a href="productdetail.html"><img src="img/scarves.jpg" alt="">
-            <h4>Relaxed Dark Wash Jeans</h4><h5>$90.00</h5></a>
-        </section>
-        <section class="tile type_a">
-            <a href="productdetail.html"><img src="img/jeans.jpg" alt="">
-            <h4>Blue Solid Wash Jeans</h4><h5>$90.00</h5></a>
-        </section>
-        <div class="clear"></div>
-        <section class="tile type_a">
-            <a href="productdetail.html"><img src="img/redshoes.jpg" alt="">
-            <h4>Darkest Wash Relaxed Jean</h4><h5>$90.00</h5></a>
-        </section>
-        <section class="tile type_b">
-            <a href="productdetail.html"><img src="img/scarf.jpg" alt="">
-            <h4>Stripped Scarf</h4><h5>$35.00</h5></a>
-        </section>
-        <section class="tile type_c">
-            <a href="productdetail.html"><img src="img/khakis.jpg" alt="">
-            <h4>Messenger Bag</h4><h5>$135.00</h5></a>
-        </section>
-        <section class="tile type_d">
-            <a href="productdetail.html"><img src="img/highwaters.jpg" alt="">
-            <h4>Vertical Stripe Button-Up</h4><h5>$52.00</h5></a>
-        </section>
-        <section class="tile type_a">
-            <a href="productdetail.html"><img src="img/layers.jpg" alt="">
-            <h4>Squared Blazer</h4><h5>$105.00</h5></a>
-        </section>
-        <section class="tile type_c">
-            <a href="productdetail.html"><img src="img/denim.jpg" alt="">
-            <h4>Skinny Gentlemans Jeans</h4><h5>$90.00</h5></a>
-        </section>
-        <section class="tile type_b">
-            <a href="productdetail.html"><img src="img/scarves.jpg" alt="">
-            <h4>Relaxed Dark Wash Jeans</h4><h5>$90.00</h5></a>
-        </section>
-        <section class="tile type_c"> 
-            <a href="productdetail.html"><img src="img/jeans.jpg" alt="">
-            <h4>Blue Solid Wash Jeans</h4><h5>$90.00</h5></a>
-        </section>
-        <div class="clear"></div>
-        <section class="tile type_a">
-            <a href="productdetail.html"><img src="img/redshoes.jpg" alt="">
-            <h4>Darkest Wash Relaxed Jean</h4><h5>$90.00</h5></a>
-        </section>
-        <section class="tile type_b">
-            <a href="productdetail.html"><img src="img/scarf.jpg" alt="">
-            <h4>Stripped Scarf</h4><h5>$35.00</h5></a>
-        </section>
-        <section class="tile type_b">
-            <a href="productdetail.html"><img src="img/khakis.jpg" alt="">
-            <h4>Messenger Bag</h4><h5>$135.00</h5></a>
-        </section>
-        <section class="tile type_c">
-            <a href="productdetail.html"><img src="img/highwaters.jpg" alt="">
-            <h4>Vertical Stripe Button-Up</h4><h5>$52.00</h5></a>
-        </section id="jeans">
+
     </div>
 
-    
+
+    <div class="col four-even featured newproduct">
+        <section>
+            <a href="productdetail.html"><img src="img/layers.jpg" alt="">
+            <h4>Squared Blazer</h4><h5>$105.00</h5><button>+</button></a>
+        </section>
+        <section>
+            <a href="productdetail.html"><img src="img/denim.jpg" alt="">
+            <h4>Skinny Gentlemans Jeans</h4><h5>$90.00</h5><button>+</button></a>
+        </section>
+        <section>
+            <a href="productdetail.html"><img src="img/scarves.jpg" alt="">
+            <h4>Relaxed Dark Wash Jeans</h4><h5>$90.00</h5><button>+</button></a>
+        </section>
+        <section>
+            <a href="productdetail.html"><img src="img/jeans.jpg" alt="">
+            <h4>Blue Solid Wash Jeans</h4><h5>$90.00</h5><button>+</button></a>
+        </section>
+        <div class="clear"></div>
+        <section>
+            <a href="productdetail.html"><img src="img/redshoes.jpg" alt="">
+            <h4>Darkest Wash Relaxed Jean</h4><h5>$90.00</h5><button>+</button></a>
+        </section>
+        <section>
+            <a href="productdetail.html"><img src="img/scarf.jpg" alt="">
+            <h4>Stripped Scarf</h4><h5>$35.00</h5><button>+</button></a>
+        </section>
+        <section>
+            <a href="productdetail.html"><img src="img/khakis.jpg" alt="">
+            <h4>Messenger Bag</h4><h5>$135.00</h5><button>+</button></a>
+        </section>
+        <section>
+            <a href="productdetail.html"><img src="img/highwaters.jpg" alt="">
+            <h4>Vertical Stripe Button-Up</h4><h5>$52.00</h5><button>+</button></a>
+        </section>
+        <section>
+            <a href="productdetail.html"><img src="img/layers.jpg" alt="">
+            <h4>Squared Blazer</h4><h5>$105.00</h5><button>+</button></a>
+        </section>
+        <section>
+            <a href="productdetail.html"><img src="img/denim.jpg" alt="">
+            <h4>Skinny Gentlemans Jeans</h4><h5>$90.00</h5><button>+</button></a>
+        </section>
+        <section>
+            <a href="productdetail.html"><img src="img/scarves.jpg" alt="">
+            <h4>Relaxed Dark Wash Jeans</h4><h5>$90.00</h5><button>+</button></a>
+        </section>
+        <section>
+            <a href="productdetail.html"><img src="img/jeans.jpg" alt="">
+            <h4>Blue Solid Wash Jeans</h4><h5>$90.00</h5><button>+</button></a>
+        </section>
+        <div class="clear"></div>
+        <section>
+            <a href="productdetail.html"><img src="img/redshoes.jpg" alt="">
+            <h4>Darkest Wash Relaxed Jean</h4><h5>$90.00</h5><button>+</button></a>
+        </section>
+        <section>
+            <a href="productdetail.html"><img src="img/scarf.jpg" alt="">
+            <h4>Stripped Scarf</h4><h5>$35.00</h5><button>+</button></a>
+        </section>
+        <section>
+            <a href="productdetail.html"><img src="img/khakis.jpg" alt="">
+            <h4>Messenger Bag</h4><h5>$135.00</h5><button>+</button></a>
+        </section>
+        <section>
+            <a href="productdetail.html"><img src="img/highwaters.jpg" alt="">
+            <h4>Vertical Stripe Button-Up</h4><h5>$52.00</h5><button>+</button></a>
+        </section>
+    </div>
+
+    <div class="col one sort-bottom">
+
+        <section><h6><a href="">12</a>|<a href="">24</a>|<a href="">48</a> per page</h6>
+        
+        <select>
+            <option value="volvo">Sort by:</option>
+          <option value="volvo">Price: Lowest to Highest</option>
+          <option value="saab">Price: Highest to Lowest</option>
+          <option value="opel">Popularity</option>
+          <option value="audi">Newest</option>
+        </select><h6> < <a href="">1</a>|<a href="">2</a>|<a href="">3 </a> > </h6>
+        </section>
+
+    </div>
+
 
     <div class="col one footer">
-        <section><h6>I do not own any of these pictures, this website was designed and developed solely for the purpose of an example. Oakwood is a fictional company.</h6></section>
+        
+        <section class="banner">
+            <ul class="socialmedia">
+                <li><img src="img/socialmedia-01.png" alt=""></li>
+                <li><img src="img/socialmedia-02.png" alt=""></li>
+                <li><img src="img/socialmedia-03.png" alt=""></li>
+                <li><img src="img/socialmedia-04.png" alt=""></li>
+                <li><img src="img/socialmedia-05.png" alt=""></li>
+            </ul>
+
+            <nav class="footnav">
+                    <a href="">FAQ</a>
+                    <a href="">Careers</a>
+                    <a href="">Terms</a>
+                    <a href="">Returns</a>
+                    <a href="">Shipping</a>
+                    <a href="">Blog</a>
+                </nav>
+
+
+            <div class="searchbar"><input type="text" placeholder="search"><button><img src="img/searchicon.png" alt=""></button></div>
+        </section>
+        <section><h6>DISCLAIMER: I do not own any of these pictures, this website was designed and developed solely for the purpose of an example. Oakwood is a fictional company.</h6></section>
     </div>
 
 
@@ -139,10 +188,11 @@
 
 </div><!--framework_container-->
 
-	<!--scripts-->
-	<script type='text/javascript' src='js/jquery.min.js'></script>
-    <script type='text/javascript' src='js/gallery.js'></script>
-	<script type='text/javascript' src='js/scripts.js'></script>
+    <!--scripts-->
+    <!--scripts-->
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type='text/javascript' src='js/scripts.js'></script>
 
 </body>
 </html>

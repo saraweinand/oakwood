@@ -10,6 +10,8 @@
     <link rel='stylesheet' href='css/normalize.min.css' type='text/css' media='all'>
     <link rel='stylesheet' href='css/slice.css' type='text/css' media='all'> 
     <link rel='stylesheet' href='css/styles.css' type='text/css' media='all'> 
+    <link rel='stylesheet' href='css/styles-collections.css' type='text/css' media='all'> 
+
 
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
  
@@ -17,7 +19,7 @@
 <body>
 
 <div class="framework_container">
-	
+    
     <div class="col one landing">
         <section class="nav">
             <a href="index.html"><img src="img/logo.png" alt=""></a>
@@ -33,7 +35,7 @@
                 <nav class="mobile">
                     <button>Toggle</button>
                     <div>
-                        <a href="collections.html">Bags</a>
+                    <a href="collections.html">Bags</a>
                     <a href="collections.html">Jackets</a>
                     <a href="collections.html">Pants</a>
                     <a href="collections.html">Accessories</a>
@@ -45,38 +47,55 @@
                 <a href="cart.html"><div class="cart"><img src="img/shoppingcart-01.png" alt=""></div></a>
 
         </section>   
-
-
-        <section><h1>handcrafted</h1><h1>Mensware</h1>
-            <h2>made in Seattle, WA</h2>
-            
-            <a href="collections.html" class="shopnow">Shop Now</a>
-            </section>
     </div>
     
-    
+    <section class="title">
+        <h1>SHOPPING CART</h1>
+        <h2>prices are guaranteed for 12 hours</h2>
+    </section>
 
-    <div class="col thirty-seventy updates">
-        <section class="offers">
-            <h2>Special Offers</h2>
-            <img src="img/promo-01.jpg" alt="">
+    <div class="col seventy-thirty cartdetails">
+
+        <section><h6>Product</h6><h6>details</h6><h6>Qty.</h6><h6>Price</h6>
         </section>
-        <section class="latestblog">
-            <h2>Latest Blog Posts</h2>
-            <div class="col fifty-fifty">
-                <img src="img/bags.jpg" alt="">
-                <h4>Blog Post Title</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam deleniti odio modi, voluptatum, aut minima necessitatibus. Vel aut illo nisi aperiam nobis doloribus, hic, quaerat sequi deleniti, saepe.....</p>
-                <a href="" class="button">Read More</a>
-            </div>
-            <div class="col fifty-fifty">
-                <img src="img/camo.jpg" alt="">
-                <h4>Blog Post Title</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam deleniti odio modi, voluptatum, aut minima necessitatibus. Vel aut illo nisi aperiam nobis doloribus, hic, quaerat sequi deleniti, saepe.....</p>
-                <a href="" class="button">Read More</a>
-            </div>
+
+
+    </div>
+
+
+    <div class="col seventy">
+        <section>
+            <div class="cartproduct"><img src="img/cart-01.png" alt=""><h4>Navy</h4><h4>1</h4><h4>$135</h4></div>
+        </section>
+        <section>
+            <div class="cartproduct"><img src="img/cart-02.png" alt=""><h4>32-32 | Blue</h4><h4>1</h4><h4>$90</h4></div>
+        </section>
+        <section>
+            <div class="cartproduct"><img src="img/cart-03.png" alt=""><h4>Medium | Plaid</h4><h4>1</h4><h4>$105</h4></div>
+        </section>
+        
+    </div>
+
+    <div class="col thirty">
+        <section>
+            <h3>subtotal</h3>
+            <h4>$330.00</h4>
+
+            <h3>sales tax</h3>
+            <h4>$28.05</h4>
+
+            <h3>shipping</h3>
+            <h4>$0.00</h4>
+
+            <h3>grand total</h3>
+            <h4>$358.05</h4>
         </section>
     </div>
+
+    <div class="col one checkout">
+        <section><button>Check Out</button></section>
+    </div>
+
 
     <div class="col one footer">
         
@@ -111,7 +130,7 @@
 
 </div><!--framework_container-->
 
-	<!--scripts-->
+    <!--scripts-->
     <!--scripts-->
     <script type='text/javascript' src='js/jquery.min.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

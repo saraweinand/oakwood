@@ -9,39 +9,53 @@
     <!--Stylesheets-->
     <link rel='stylesheet' href='css/normalize.min.css' type='text/css' media='all'>
     <link rel='stylesheet' href='css/slice.css' type='text/css' media='all'> 
+    <link rel='stylesheet' href='css/styles.css' type='text/css' media='all'> 
     <link rel='stylesheet' href='css/styles-productdetail.css' type='text/css' media='all'> 
+
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
  
 </head>
 <body>
 
 <div class="framework_container">
-	
-    <div class="col one landing">
-        <section class="banner">
-            
-        </section> 
-        <section class="nav">
-                <ul>
-                    <li><a href="xxx"><img src="img/logo.png" alt=""></a></li>
-                    <li><a href="xxx">Shoes</a></li>
-                    <li><a href="xxx">Bags</a></li>
-                    <li><a href="xxx">Apparel</a></li>
-                    <li><a href="xxx">Accessories</a></li>
-                    <li><a href="xxx">Sale</a></li>
-                    <li><a href="xxx">Blog</a></li>
-                </ul>
-
-                <div class="searchbar"><input type="text" placeholder="search"><button><img src="img/socialmedia_01.png" alt=""></button></div>
-
-        </section>  
-    </div>
     
+    <div class="col one landing">
+        <section class="nav">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+                <nav class="desktop">
+                    <a href="collections.html">Bags</a>
+                    <a href="collections.html">Jackets</a>
+                    <a href="collections.html">Pants</a>
+                    <a href="collections.html">Accessories</a>
+                    <a href="collections.html">Sale</a>
+                    <a href="">Blog</a>
+                </nav>
+                
+                <nav class="mobile">
+                    <button>Toggle</button>
+                    <div>
+                    <a href="collections.html">Bags</a>
+                    <a href="collections.html">Jackets</a>
+                    <a href="collections.html">Pants</a>
+                    <a href="collections.html">Accessories</a>
+                    <a href="collections.html">Sale</a>
+                    <a href="">Blog</a>
+                    </div>
+                </nav>
 
-    <section class="title">
+                <a href="cart.html"><div class="cart"><img src="img/shoppingcart-01.png" alt=""></div></a>
+
+        </section>   
+    </div>
+
+
+<section class="title">
+    <a href="collections.html"><h1>&#8592;</h1><h2>Back</h2></a>
         <h6>Apparel / Jeans / Skinny Gentlemans Jean</h6>
     </section>
 
-    <div class="col thirty-seventy productdetail">
+    <div class="col fourty-sixty productdetail">
         <section>
             <a href=""><img src="img/denim.jpg" alt="">
         </section>
@@ -94,9 +108,7 @@
     <div class="col six-even moreoptions">
         <div class="title">
         <h2>We think you might like these:</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 115.5 7.5" enable-background="new 0 0 115.5 7.5" xml:space="preserve">
-<rect x="0" y="0" width="115.5" height="7.5"/>
-</svg>
+        
     </div>
         <section>
             <a href="productdetail.html"><img src="img/layers.jpg" alt="">
@@ -124,10 +136,31 @@
         </section>
     </div>
 
-    
 
     <div class="col one footer">
-        <section><h6>I do not own any of these pictures, this website was designed and developed solely for the purpose of an example. Oakwood is a fictional company.</h6></section>
+        
+        <section class="banner">
+            <ul class="socialmedia">
+                <li><img src="img/socialmedia-01.png" alt=""></li>
+                <li><img src="img/socialmedia-02.png" alt=""></li>
+                <li><img src="img/socialmedia-03.png" alt=""></li>
+                <li><img src="img/socialmedia-04.png" alt=""></li>
+                <li><img src="img/socialmedia-05.png" alt=""></li>
+            </ul>
+
+            <nav class="footnav">
+                    <a href="">FAQ</a>
+                    <a href="">Careers</a>
+                    <a href="">Terms</a>
+                    <a href="">Returns</a>
+                    <a href="">Shipping</a>
+                    <a href="">Blog</a>
+                </nav>
+
+
+            <div class="searchbar"><input type="text" placeholder="search"><button><img src="img/searchicon.png" alt=""></button></div>
+        </section>
+        <section><h6>DISCLAIMER: I do not own any of these pictures, this website was designed and developed solely for the purpose of an example. Oakwood is a fictional company.</h6></section>
     </div>
 
 
@@ -137,10 +170,11 @@
 
 </div><!--framework_container-->
 
-	<!--scripts-->
-	<script type='text/javascript' src='js/jquery.min.js'></script>
-    <script type='text/javascript' src='js/gallery.js'></script>
-	<script type='text/javascript' src='js/scripts.js'></script>
+    <!--scripts-->
+    <!--scripts-->
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type='text/javascript' src='js/scripts.js'></script>
 
 </body>
 </html>
